@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'HelveticaNowText Bold';
+    src: url("../fonts/Helvetica-Bold.ttf");
+}
+
+.f-He-Bold {
+    font-family: 'HelveticaNowText Bold';
+}
+@font-face {
+    font-family: 'HelveticaNowText Light';
+    src: url("../fonts/HelveticaNowText-Light.ttf");
+}
+
+.f-He-Light {
+    font-family: 'HelveticaNowText Light';
+}
+@font-face {
+    font-family: 'HelveticaNowText Regular';
+    src: url("../fonts/HelveticaNowText-Regular.ttf");
+}
+
+.f-He-Regular {
+    font-family: 'HelveticaNowText Regular';
+}
+.fz-11{
+    font-size: 0.8vw;
+}
+
+.fz-14 {
+    font-size: 0.85vw;
+}
+
+.fz-16 {
+    font-size: 0.9vw;
+}
+
+.fz-17 {
+    font-size: 0.95vw;
+}
+
+.fz-18 {
+    font-size: 1vw;
+}
+
+.fz-20 {
+    font-size: 1.05vw;
+}
+
+.fz-22 {
+    font-size: 1.1vw;
+}
+
+.fz-24 {
+    font-size: 1.18vw;
+}
+
+.fz-25 {
+    font-size: 1.2vw;
+}
+
+.fz-30 {
+    font-size: 1.5vw;
+}
+
+.fz-36 {
+    font-size: 1.9vw;
+}
+
+.fz-38 {
+    font-size: 2vw;
+}
+
+.fz-40 {
+    font-size: 2.1vw;
+}
+
+.fz-45 {
+    font-size: 2.35vw;
+}
+
+.fz-50 {
+    font-size: 2.7vw;
+}
+
+.fz-60 {
+    font-size: 3.1vw;
+}
+
+.fz-70 {
+    font-size: 3.4vw;
+}
+
+.fz-73 {
+    font-size: 3.6vw;
+}
+
+.fz-80 {
+    font-size: 3.9vw;
+}
+
+.fz-84 {
+    font-size: 4.2vw;
+}
+
+.fz-90 {
+    font-size: 4.4vw;
+}
+
+.fz-93 {
+    font-size: 6vw;
+}
+
+.fz-100 {
+    font-size: 5.4vw;
+}
+
+.fz-110 {
+    font-size: 6.4vw;
+}
+
+.fz-120 {
+    font-size: 7.4vw;
+}
+
+.fz-130 {
+    font-size: 8.4vw;
+}
+
+.fz-140 {
+    font-size: 9.4vw;
+}
+
+.fz-150 {
+    font-size: 10.4vw;
+}
+
+@media only screen and (min-width:200px) and (max-width: 767px) {
+    .fz-11{
+        font-size: 3vw;
+    }
+
+    .fz-18 {
+        font-size: 3vw;
+    }
+    .fz-20 {
+        font-size: 3.15vw;
+    }
+    .fz-22{
+        font-size: 3.3vw;
+    }
+    .fz-24{
+        font-size: 4.2vw;
+    }
+    .fz-25{
+        font-size: 4.3vw;
+    }
+    .fz-30{
+        font-size: 4.5vw;
+    }
+    .fz-40{
+        font-size: 6.3vw;
+    }
+    .fz-45{
+        font-size: 7.05vw;
+    }
+    .fz-50{
+        font-size: 7.55vw;
+    }
+    .fz-70{
+        font-size: 10.2vw;
+    }
+
+}
