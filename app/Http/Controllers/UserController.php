@@ -1,32 +1,69 @@
 <?php
 
 namespace App\Http\Controllers;
- 
+
+use Illuminate\Http\Request;
 use App\Models\User;
 
- 
 class UserController extends Controller
 {
-    public function ShowSerchbyID(string $id)
+    //
+    
+    public function show( string $id)
     {
-        
         try {
-            $user = User::findOrFail($id);
-        return response()->json($user);
+            $user = user::findOrfail($id);
+            return response()->json($user);
         } catch (\Throwable $th) {
-            return response()->json('Usuario no Encontrado');
+            //throw $th;
+            return response()->json('Usuario no encontrado');
+        }
+
+    
+    }
+    public function CallMail(string $email)
+    {
+        try {
+            //code...
+            
+            $mailCall = User::where('email', $email)->where('status', '!=', 'Inactive')->first();
+            return response()->json($mailCall);
+
+        } 
+        catch (\Throwable $th) {
+            //throw $th;
+            return response()->json('Usuario no encontrado');
         }
     }
-    public function ShowSerchActived()
+    public function allUsers()
     {
-        $Status = User::where('status', 'active')->get();
-       return response()->json($Status);
+        try {
+            //code...
+            $alluser = User::all();
+            return response()->json($alluser);
+
+        } 
+        catch (\Throwable $th) {
+            //throw $th;
+            return response()->json('Usuario no encontrado');
+        }
+
     }
-    
-    public function ShowSerchEmail($email)
+
+    public function mail()
     {
-         $user =  User::where('email', $email)->first();
-         return response()->json($user);
+        try {
+            
+            $allmails = User::get('email');
+            return response()->json($allmails);
+
+        } 
+        catch (\Throwable $th) {
+            return response()->json('Usuario no encontrado');
+            //throw $th;
+        }
+
     }
-       
+
+
 }
