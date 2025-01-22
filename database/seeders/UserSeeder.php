@@ -22,6 +22,43 @@ class UserSeeder extends Seeder
             'email' => 'test@gmail.com',
             'password' => Hash::make('pa$$w0rd'),
         ]);
+    
+        User::create([
+            'id' => 2,
+            'name' => 'Luis',
+            'last_name' => 'Cruz',
+            'email' => 'treinta@gmail.com',
+            'password' => Hash::make('pa$$w0rd'),
+            'status' => 'active',
+        
+        ]);
+    
+        User::create([
+            'id' => 3,
+            'name' => 'carlos',
+            'last_name' => 'Alpes',
+            'email' => 'Veinteuno@gmail.com',
+            'password' => Hash::make('pa$$w0rd'),
+            'status' => 'inactive',
+        ]);
+    
+        User::create([
+            'id' => 4,
+            'name' => 'Sergio',
+            'last_name' => 'Londres',
+            'email' => 'cuarenta@gmail.com',
+            'password' => Hash::make('pa$$w0rd'),
+            'status' => 'active',
+        ]);
+    
+        User::create([
+            'id' => 5,
+            'name' => 'Silvino',
+            'last_name' => 'Corral',
+            'email' => 'cincuenta@gmail.com',
+            'password' => Hash::make('pa$$w0rd'),
+            'status' => 'inactive',
+        ]);
 
         User::create([
             'id' => 2,
@@ -68,4 +105,6 @@ class UserSeeder extends Seeder
             'password' => Hash::make('12345'),
         ]);
     }
+
+
 }

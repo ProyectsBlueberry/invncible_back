@@ -30,4 +30,25 @@ class Products extends Model
     {
         return $this->BelongsTo(Filters::class, 'id_filter', 'id');
     }
+    
+    public function detail ()
+    {
+        return $this->hasOne(Details::class,'id_product','id');
+    }
+    public function link_to ()
+    {
+        return $this->hasMany(LinkTo::class,'id_product','id');
+    }
+    public function galleries ()
+    {
+        return $this->hasMany(Galleries::class,'id_product','id');
+    }
+    public function inventories ()
+    {
+        return $this->hasMany(Inventories::class, 'id_product','id');
+    }
+    public function characteristics ()
+    {
+        return $this->hasMany(Characteristics::class,'id_product','id');
+    }
 }
